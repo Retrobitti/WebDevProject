@@ -19,8 +19,17 @@ h1{
 }
 
 p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
     margin: 0;
     padding: 5;
+    color: black;
+}
+ul{
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    margin: 5;
+
+    padding:20;
+    color: black;
 }
