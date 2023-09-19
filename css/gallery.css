@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px 20px 0px 20px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: border 5ms;
+    
+}
+
+img:hover{
+    border: 5px solid black;
+}
+img:active{
+    animation-name: fadeOut;
+    animation-duration: 1s;
+}
+
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.container .box .pics1{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.container .box .pics2{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.container .heading h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.container .heading h2{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+figcaption{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 0px;
+}
+.container .heading .button{
+    margin: 5px 5px 5px 5px;
+    background-color: rgb(27, 27, 27);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.container .heading .button a{
+    text-decoration: none;
+    color: white;
+}
+figure{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+@media only screen and (max-width:768px) {
+    .container .box{
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .container .box .pics1{
+        width: 100%;
+    }
+    .container .box .pics2{
+      
+        width: 100%;
+    }
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.559);
+    z-index: 1;
+    overflow: auto;
+    
+}
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.modalImg{
+    max-height:720px;
+    max-width: 80%;
+
+    
+}
+.close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+
+}
