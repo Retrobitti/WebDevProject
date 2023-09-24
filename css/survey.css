@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+body{
+    background-image: url(images/sprite.png);
+    background-size: cover;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20px auto auto auto auto;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.heading{
+    grid-column-start: span 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: white;
+}
+form{
+    grid-column-start: span 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.119);
+}
+.options1{
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.options2{
+    padding-bottom: 20px;   
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+}
+.group2{
+    margin-left: 41%;
+    margin-right: 20%;
+    text-align: left;
+}
+.options3{
+    padding-bottom: 20px;   
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+}
+.group3{
+    margin-left: 41%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+h2{
+    color: white;
+}
+
+
+

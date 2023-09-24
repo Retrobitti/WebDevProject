@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="css/survey.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <div class="heading">
+        <h1>Video Game Survey</h1>
+    </div>
+    <form>
+        <div class="options1">
+            <h2>About you:</h2>
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age"><br>
+            <label for="favGame">Favorite videogame:</label><br>
+            <input type="text" id="favGame" name="favGame"><br>
+        </div>
+        <div class="options2">
+            <h2>Which of these genres interest you:</h2><br>
+            <div class="group2">
+                <input type="checkbox" id="option1" name="option1" value="fps">
+                <label for="option1">First person shooter</label> <br>
+                <input type="checkbox" id="option2" name="option2" value="horror">
+                <label for="option2">Horror</label> <br>
+                <input type="checkbox" id="option3" name="option3" value="metroidvania">
+                <label for="option3">Metroidvania</label> <br>
+                <input type="checkbox" id="option4" name="option4" value="roguelike">
+                <label for="option4">Roguelike</label> <br>
+                <input type="checkbox" id="option5" name="option5" value="rpg">
+                <label for="option5">RPG</label> 
+            </div> 
+        </div>
+        <div class="options3">
+            <h2>Pc or Console:</h2>
+            <div class="group3">
+                <input type="radio" id="pc" name="PcOrConsole" value="Pc">
+                <label for="pc">Pc</label><br>
+                <input type="radio" id="console" name="PcOrConsole" value="console">
+                <label for="console">Console</label><br>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</div>
+</body>
